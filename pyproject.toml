@@ -1,0 +1,21 @@
+[project]
+name = "basketball-tracking"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Quentin Garnier", email = "56115920+quentgar@users.noreply.github.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "opencv-python>=5.1.0.95",
+    "rfdetr>=1.12.1",
+    "supervision>=0.32.2",
+]
+
+[project.scripts]
+basketball-tracking = "basketball_tracking:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
